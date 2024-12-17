@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我会搭建网站了！</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" src="https://v16m-default.akamaized.net/542418f50edbc8f10eb36c5c5d371a91/6761d2e0/video/tos/useast2a/tos-useast2a-ve-0068-euttp/oQ8Mu82GXg8ORzsNIbeAeGGHL9eAAEeYuRI75W/?a=0&bti=bGRuZHxvMXIxcm53Zm1cYF9ebWFzaHFmOg%3D%3D&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&cv=1&br=2472&bt=1236&cs=2&ds=4&ft=KapelPPT2eOjVuSEu2mfucCpSnM5SnH4yRN7TGbL&mime_type=video_mp4&qs=15&rc=OWU0OmhlaTs1NTZpPGc6N0BpajhobGs5cnFpdTMzZjczM0A1NS8yX2A0Xi4xMjQuX2AtYSNzM2xzMmRrLmtgLS1kMWNzcw%3D%3D&vvpl=1&l=20241217133622089081F7702E441300CC&btag=e00088000" loop playsinline></video>
+    <script>
+        document.addEventListener('click', () => {
+            const video = document.getElementById('video');
+            video.play(); // 触发播放带声音的视频
+        }, { once: true });
+    </script>
+</body>
+</html>
